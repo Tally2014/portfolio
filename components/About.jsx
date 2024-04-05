@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import SectionHeading from "./SectionHeading";
 
 export default function About() {
   return (
@@ -11,9 +12,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <h2 className="text-3xl font-medium capitalize mb-8 text-center">
-        About Me
-      </h2>
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         As a seasoned professional in the{" "}
         <span className="font-medium">Television industry</span> at{" "}
