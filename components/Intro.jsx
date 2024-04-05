@@ -54,10 +54,10 @@ export default function Intro() {
         <span className="font-bold">Hello, I'm Ernest.</span> I'm a{" "}
         <span className="font-bold">Broadcasting Graphics Developer</span> by
         profession with <span className="font-bold">5 years</span> of experience
-        and a <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">1 year</span> of professional experience. I
-        enjoy building <span className="italic">graphics & apps</span>. My focus
-        is <span className="underline">C# & JavaScript</span>.
+        and a <span className="font-bold">Full-stack developer</span> with{" "}
+        <span className="font-bold">1 year</span> of experience. I enjoy
+        building <span className="italic">graphics & apps</span>. My focus is{" "}
+        <span className="underline">C# & JavaScript</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-5 px-4 text-lg font-medium"
