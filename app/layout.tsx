@@ -1,29 +1,39 @@
-import Header from '@/components/Header'
-import './globals.css'
-import { Inter } from 'next/font/google'
+import Header from "@/components/Header";
+import "./globals.css";
+import { Inter } from "next/font/google";
+import ActiveSectionContextProvider from "@/context/ActiveSectionContextProvider";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Montso | Personal Portfolio',
-  description: 'Montso is Broadcasting Graphics Logic builder with 5 years expirience and C# and JS Full-stack Developer',
-}
+  title: "Montso | Personal Portfolio",
+  description:
+    "Montso is a Broadcasting Graphics Logic builder with 5 years expirience and a C#, JavaScript Full-stack Developer",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 `}>
-         <div className="bg-[#CBC3E3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] 
-         rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
-        <div className="bg-[#D8BFD8] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] 
-        rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] "></div>
-        <Header/>
-        {children}
-        </body>
+      <body
+        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 `}
+      >
+        <div
+          className="bg-[#CBC3E3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] 
+         rounded-full blur-[10rem] sm:w-[68.75rem]"
+        ></div>
+        <div
+          className="bg-[#D8BFD8] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] 
+        rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] "
+        ></div>
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
+      </body>
     </html>
-  )
+  );
 }
