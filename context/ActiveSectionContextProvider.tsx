@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, createContext, useContext } from "react";
 import { links } from "@/lib/data";
 
