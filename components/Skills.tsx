@@ -6,6 +6,11 @@ export default function Skills() {
   return (
     <section>
       <SectionHeading>My skills</SectionHeading>
+      <ul>
+        {skillsData.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ul>
     </section>
   );
 }
