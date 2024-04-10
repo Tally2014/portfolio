@@ -8,22 +8,45 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
+import { useInView } from "react-intersection-observer";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   return (
-    <section id="experience" ref={ref}>
+    <section id="experience" ref={ref} className="scroll-m-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
-        {experiencesData.map((item, index) => (
-          <React.Fragment key={index}>
-            <VerticalTimelineElement visible={true}>
-              <h3>{item.title}</h3>
-              <p>{item.location}</p>
-              <p>{item.description}</p>
-            </VerticalTimelineElement>
-          </React.Fragment>
-        ))}
+      <VerticalTimeline lineColor="" animate={true}>
+        {experiencesData.map((item, index) => {
+          return (
+            <div key={index} ref={ref} className="vertical-timeline-element">
+              <VerticalTimelineElement
+                contentStyle={{
+                  background: "#f3f4f6",
+                  boxShadow: "none",
+                  border: "1px solid rgba(0, 0, 0, 0.05)",
+                  textAlign: "left",
+                  padding: "1.3rem 2rem",
+                }}
+                contentArrowStyle={{
+                  borderRight: "0.4rem solid #9ca3af",
+                }}
+                visible={true}
+                date={item.date}
+                icon={item.icon}
+                iconStyle={{
+                  background: "white",
+                  fontSize: "1.5rem",
+                }}
+              >
+                <h3 className="font-semibold capitalize">{item.title}</h3>
+                <p className="!mt-0 font-normal">{item.location}</p>
+                <p className="!mt-1 !font-normal text-gray-700">
+                  {item.description}
+                </p>
+              </VerticalTimelineElement>
+            </div>
+          );
+        })}
       </VerticalTimeline>
     </section>
   );
