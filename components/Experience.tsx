@@ -15,11 +15,13 @@ export default function Experience() {
   return (
     <section id="experience" ref={ref} className="scroll-m-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="" animate={true}>
+      <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => {
+          const { ref, inView } = useInView({ threshold: 0 });
           return (
             <div key={index} ref={ref} className="vertical-timeline-element">
               <VerticalTimelineElement
+                visible={inView}
                 contentStyle={{
                   background: "#f3f4f6",
                   boxShadow: "none",
@@ -30,7 +32,6 @@ export default function Experience() {
                 contentArrowStyle={{
                   borderRight: "0.4rem solid #9ca3af",
                 }}
-                visible={true}
                 date={item.date}
                 icon={item.icon}
                 iconStyle={{
