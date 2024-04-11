@@ -35,14 +35,14 @@ export default function Contact() {
       </p>
       <form className="mt-10 flex flex-col">
         <input
-          className="h-14 px-4 rounded-lg border-black"
+          className="h-14 px-4 rounded-lg borderBlack"
           name="senderEmail"
           type="email"
           maxLength={500}
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 p-4 border-black"
+          className="h-52 my-3 p-4 borderBlack"
           name="message"
           placeholder="Your message"
           required
