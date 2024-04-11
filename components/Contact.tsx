@@ -3,6 +3,7 @@ import { useSectionInView } from "@/lib/hooks";
 import React from "react";
 import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
+import SubmitBtn from "./SubmitBtn";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -47,6 +48,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
+        <SubmitBtn />
       </form>
     </motion.section>
   );
