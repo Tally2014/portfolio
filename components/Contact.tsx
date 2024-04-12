@@ -42,7 +42,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 p-4 borderBlack"
+          className="h-52 my-3 p-4 borderBlack rounded-lg"
           name="message"
           placeholder="Your message"
           required
