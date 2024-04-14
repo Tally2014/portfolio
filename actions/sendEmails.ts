@@ -22,11 +22,15 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
-  await resend.emails.send({
-    from: "onboarding@resend.dev",
-    to: "montsoernestmoalosi@gmail.com",
-    subject: "Message from contact form",
-    reply_to: senderEmail,
-    text: message,
-  });
+  try {
+    await resend.emails.send({
+      from: "Contact form <onboarding@resend.dev>",
+      to: "montsoernestmoalosi@gmail.com",
+      subject: "Message from contact form",
+      reply_to: senderEmail,
+      text: message,
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
