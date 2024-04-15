@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Montso | Personal Portfolio",
   description:
-    "Montso is a Broadcasting Graphics Logic builder with 5 years expirience and a C#, JavaScript Full-stack Developer",
+    "Montso Ernest is a Broadcasting Graphics Logic builder with 5 years expirience and a C#, JavaScript Full-stack Developer",
 };
 
 export default function RootLayout({
@@ -22,7 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 `}
+        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36
+        dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
         <div
           className="bg-[#CBC3E3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] 
