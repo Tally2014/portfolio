@@ -85,23 +85,18 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "C#",
+  "WPF",
+  ".NET MAUI",
+  "ResfulAPI",
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
   "React",
-  "Next.js",
   "Node.js",
   "Git",
-  "Tailwind",
-  "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Tailwind",
   "Framer Motion",
 ] as const;
