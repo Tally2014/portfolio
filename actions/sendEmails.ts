@@ -23,9 +23,9 @@ export const sendEmail = async (formData: FormData) => {
       error: "Invalid message",
     };
   }
-
+  let data;
   try {
-    await resend.emails.send({
+    data = await resend.emails.send({
       from: "Contact form <onboarding@resend.dev>",
       to: "montsoernestmoalosi@gmail.com",
       subject: "Message from contact form",
@@ -40,4 +40,5 @@ export const sendEmail = async (formData: FormData) => {
       error: getErrorMessage(error),
     };
   }
+  return { data };
 };
