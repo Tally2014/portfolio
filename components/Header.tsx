@@ -50,9 +50,13 @@ export default function Header() {
               </Link>
             </motion.li>
           ))}
-          <div className="hidden sm:inline">
+          <motion.div
+            className="hidden sm:inline"
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+          >
             <ThemeSwitch />
-          </div>
+          </motion.div>
         </ul>
       </nav>
     </header>
