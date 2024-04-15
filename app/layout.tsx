@@ -40,7 +40,10 @@ export default function RootLayout({
           <Toaster position="bottom-center" />
           <Footer />
         </ActiveSectionContextProvider>
-        <div className="sm:hidden fixed bottom-5 right-5 bg-white/80 backdrop-blur-[0.5rem] rounded-full">
+        <div
+          className="sm:hidden fixed bottom-5 right-5 bg-white/80 dark:bg-gray-950/50
+        backdrop-blur-[0.5rem] rounded-full"
+        >
           <ThemeSwitch />
         </div>
       </body>
