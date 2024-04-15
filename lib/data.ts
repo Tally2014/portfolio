@@ -100,3 +100,21 @@ export const skillsData = [
   "Tailwind",
   "Framer Motion",
 ] as const;
+
+export const applicationsData = [
+  "Maestro Designer",
+  "Maestro Page editor",
+  "Maestro Controller",
+  "Viz Artist",
+  "Photoshop",
+  "Illustrator",
+  "After Effects",
+  "Premier Pro",
+  "Adobe Animate",
+  "Adobe XD",
+  "Figma",
+  "Visual Code",
+  "Visual Studio Code",
+  "Office",
+  "Excell",
+] as const;
