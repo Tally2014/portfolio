@@ -61,7 +61,7 @@ export default function Skills() {
         {applicationsData.map((app, index) => (
           <motion.li
             key={index}
-            className="bg-white border border-gray-500 rounded-xl px-5 py-3 
+            className="bg-white border border-gray-500 rounded-xl px-5 py-3 flex gap-1 items-center 
             dark:bg-white/10 dark:text-white/80"
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -71,7 +71,14 @@ export default function Skills() {
             }}
             custom={index}
           >
-            {app}
+            <Image
+              src={app.imageUrl}
+              alt="skill-image"
+              quality={95}
+              width={30}
+              height={30}
+            />
+            {app.title}
           </motion.li>
         ))}
       </ul>
