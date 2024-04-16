@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import corpcommentImg from "../public/corpcomment.png";
+import rmtdevImg from "../public/rmtdev.png";
+import wordanalyticsImg from "../public/wordanalytics.png";
 
 export const links = [
   {
@@ -64,7 +64,7 @@ export const projectsData = [
   {
     title: "CorpComment",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "I worked as a full-stack developer on this startup project for 2 years. Users can give feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
   },
@@ -78,27 +78,27 @@ export const projectsData = [
   {
     title: "Word Analytics",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
 
 export const skillsData = [
-  "C#",
-  "WPF",
-  ".NET MAUI",
-  "ResfulAPI",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Node.js",
-  "Git",
-  "MongoDB",
-  "Express",
-  "Tailwind",
-  "Framer Motion",
+  { title: "C#", imageUrl: "/icons/skills/csharp.png" },
+  { title: "WPF", imageUrl: "/icons/skills/wpf.png" },
+  { title: ".NET MAUI", imageUrl: "/icons/skills/maui.png" },
+  { title: "ResfulAPI", imageUrl: "/icons/skills/rest.png" },
+  { title: "HTML", imageUrl: "/icons/skills/html.png" },
+  { title: "CSS", imageUrl: "/icons/skills/css.png" },
+  { title: "JavaScript", imageUrl: "/icons/skills/js.png" },
+  { title: "React", imageUrl: "/icons/skills/react.png" },
+  { title: "Node.js", imageUrl: "/icons/skills/node.png" },
+  { title: "Git", imageUrl: "/icons/skills/git.png" },
+  { title: "MongoDB", imageUrl: "/icons/skills/mongodb.png" },
+  { title: "Express", imageUrl: "/icons/skills/express.png" },
+  { title: "Tailwind", imageUrl: "/icons/skills/tailwind.png" },
+  { title: "Framer Motion", imageUrl: "/icons/skills/framer.png" },
 ] as const;
 
 export const applicationsData = [

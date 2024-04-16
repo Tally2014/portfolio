@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import SectionHeading from "./SectionHeading";
 import { applicationsData, skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -33,7 +34,7 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className="bg-white border border-gray-500 rounded-xl px-5 py-3 
+            className="bg-white border border-gray-500 rounded-xl px-5 py-3 flex gap-1 items-center
             dark:bg-white/10 dark:text-white/80"
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -43,14 +44,21 @@ export default function Skills() {
             }}
             custom={index}
           >
-            {skill}
+            <Image
+              src={skill.imageUrl}
+              alt="skill-image"
+              quality={95}
+              width={30}
+              height={30}
+            />
+            {skill.title}
           </motion.li>
         ))}
       </ul>
 
       <SectionHeading>Software Knowledge</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {applicationsData.map((skill, index) => (
+        {applicationsData.map((app, index) => (
           <motion.li
             key={index}
             className="bg-white border border-gray-500 rounded-xl px-5 py-3 
@@ -63,7 +71,7 @@ export default function Skills() {
             }}
             custom={index}
           >
-            {skill}
+            {app}
           </motion.li>
         ))}
       </ul>
