@@ -2,7 +2,7 @@
 
 import React from "react";
 import SectionHeading from "./SectionHeading";
-import { applicationsData, skillsData } from "@/lib/data";
+import { skillsData, toolsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -56,9 +56,9 @@ export default function Skills() {
         ))}
       </ul>
 
-      <SectionHeading>Software Knowledge</SectionHeading>
+      <SectionHeading>Tools</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {applicationsData.map((app, index) => (
+        {toolsData.map((tool, index) => (
           <motion.li
             key={index}
             className="bg-white border border-gray-500 rounded-xl px-5 py-3 flex gap-1 items-center 
@@ -72,13 +72,13 @@ export default function Skills() {
             custom={index}
           >
             <Image
-              src={app.imageUrl}
+              src={tool.imageUrl}
               alt="skill-image"
               quality={95}
               width={30}
               height={30}
             />
-            {app.title}
+            {tool.title}
           </motion.li>
         ))}
       </ul>

@@ -101,7 +101,7 @@ export const skillsData = [
   { title: "Framer Motion", imageUrl: "/icons/skills/framer.png" },
 ] as const;
 
-export const applicationsData = [
+export const toolsData = [
   { title: "Maestro Designer", imageUrl: "/icons/applications/avid.png" },
   { title: "Maestro Page editor", imageUrl: "/icons/applications/avid.png" },
   { title: "Maestro Controller", imageUrl: "/icons/applications/avid.png" },
