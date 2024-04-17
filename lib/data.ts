@@ -88,7 +88,7 @@ export const skillsData = [
   { title: "C#", imageUrl: "/icons/skills/csharp.png" },
   { title: "WPF", imageUrl: "/icons/skills/wpf.png" },
   { title: ".NET MAUI", imageUrl: "/icons/skills/maui.png" },
-  { title: "ResfulAPI", imageUrl: "/icons/skills/rest.png" },
+  { title: "RestfulAPI", imageUrl: "/icons/skills/rest.png" },
   { title: "HTML", imageUrl: "/icons/skills/html.png" },
   { title: "CSS", imageUrl: "/icons/skills/css.png" },
   { title: "JavaScript", imageUrl: "/icons/skills/js.png" },
