@@ -64,22 +64,15 @@ export const projectsData = [
   {
     title: "Broadcasting Graphics",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give feedback to companies.",
+      "Since the launch of Newzroom Afrika in 2019, I have been instrumental in developing and implementing live graphics. My expertise encompasses the full spectrum of graphics creation, including design, animation, and the development of dynamic templates, offering a comprehensive full-stack graphics solution.",
     tags: ["Maestro Designer", "Page editor", "News Controller"],
     imageUrl: project1,
   },
   {
-    title: "Complex Live Graphics",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: project2,
-  },
-  {
     title: "Full-Stack Development",
     description:
-      "A web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["C#", "WPF", "MVVM", "JSON", "XAML", "API"],
+      "Upon Learning Programming, I have expanded my role at Newzroom Afrika to include the development of desktop applications. These applications are specifically designed to enhance the efficiency and effectiveness of live graphics data management, further contributing to the dynamic broadcasting environment.",
+    tags: ["C#", "WPF", "XAML", "JSON", "API", "SQL"],
     imageUrl: project3,
   },
 ] as const;
