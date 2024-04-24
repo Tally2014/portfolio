@@ -18,26 +18,25 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        As a seasoned professional in the{" "}
+        I'm an expirenced professional in the{" "}
         <span className="font-medium">Television industry</span> at{" "}
-        <span className="font-medium">Newzroom Afrika</span>, I embraced my
-        passion for programming by diving into coding bootcamps where I
-        learned👨‍💻 <span className="font-medium">C# and web development</span>.
-        This knowledge empowered me to create applications for{" "}
-        <span className="italic">TV live graphics</span>. I love comming up with
-        new ideas that are <span className="underline">innovative</span>,
-        enhances my work <span className="underline">efficiency</span> and
-        simplifying complex tasks. My core programming stack includes{" "}
+        <span className="font-medium">Newzroom Afrika</span>, I build
+        interactive live graphics. My strength lies in the technical aspect
+        wheares I oversee broadcasting graphics logic and program advanced
+        graphics templates. have also expanded my skills by enrolling in coding
+        courses where I learned{" "}
+        <span className="font-medium">C# and web development</span>. This
+        knowledge empowered me to create applications for{" "}
+        <span className="italic">TV live graphics</span>. I'm passionate about
+        about generating <span className="underline">innovative</span> ideas
+        that streamline tasks and enhance{" "}
+        <span className="underline">efficiency</span>. My programming stack
+        includes{" "}
         <span className="font-medium">
-          C#, WPF, .NET MAUI, JavaScript, React, Node.js, and MongoDB
+          C#, WPF, .NET MAUI, JavaScript, React, Node.js, and SQL Databases
         </span>
-        . Professionally, I use tools like{" "}
-        <span className="font-medium">
-          Avid Maestro Designer, Avid Page Editor, Avid News Controller, Viz
-          Artist and Adobe Creative Suite
-        </span>
-        . Committed to growth, I embrace my ability to quickly learn new
-        technologies💪.
+        . I'm dedicated to continual learning and I easily adapt to new
+        technologies.
       </p>
 
       <p>
