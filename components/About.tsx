@@ -18,16 +18,17 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I'm an expirenced professional in the{" "}
+        I'm an experienced professional in the{" "}
         <span className="font-medium">Television industry</span> at{" "}
-        <span className="font-medium">Newzroom Afrika</span>, I build
-        interactive live graphics. My strength lies in the technical aspect
-        wheares I oversee broadcasting graphics logic and program advanced
-        graphics templates. have also expanded my skills by enrolling in coding
-        courses where I learned{" "}
+        <span className="font-medium">Newzroom Afrika</span> with
+        <span className="font-medium"> 5 years </span>
+        consistant, I build interactive live graphics. My strength lies in the
+        technical aspect wheares I oversee broadcasting graphics logic and
+        program advanced graphics templates. I have also expanded my skills by
+        enrolling in coding courses where I learned{" "}
         <span className="font-medium">C# and web development</span>. This
         knowledge empowered me to create applications for{" "}
-        <span className="italic">TV live graphics</span>. I'm passionate about
+        <span className="italic">live graphics</span>. I'm passionate about
         about generating <span className="underline">innovative</span> ideas
         that streamline tasks and enhance{" "}
         <span className="underline">efficiency</span>. My programming stack
@@ -41,8 +42,8 @@ export default function About() {
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching Anime, and playing with my nephew. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>🤩.
+        video games, watching Anime, and spending time with my family. I also
+        enjoy <span className="font-medium">learning new things</span>🤩.
       </p>
     </motion.section>
   );

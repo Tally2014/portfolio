@@ -35,12 +35,12 @@ export default function Intro() {
               height={200}
               priority={true}
               quality={95}
-              className="rounded-full border-[0.35rem] border-white h-24 w-24 object-cover shadow-xl"
+              className="rounded-full border-[0.35rem] border-white h-50 w-50 object-cover shadow-xl"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-2 right-3 text-5xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -59,13 +59,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Ernest.</span> I'm a{" "}
-        <span className="font-bold">Broadcasting Graphics Developer</span> by
-        profession with <span className="font-bold">5 years</span> of experience
-        and a <span className="font-bold">Full-stack developer</span> with{" "}
-        <span className="font-bold">1 year</span> of experience. I enjoy
-        building <span className="italic">graphics & apps</span>. My focus is{" "}
-        <span className="underline">C# & JavaScript</span>.
+        <div className="mb-8">
+          Hello, I'm <span className="font-bold">Montso Ernest</span>.
+        </div>
+        <span className="font-bold text-6xl">
+          Broadcasting Graphics Developer{" "}
+        </span>
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-5 px-4 text-lg font-medium"
