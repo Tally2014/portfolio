@@ -1,8 +1,12 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
+import Modal from "react-modal";
+
+// Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
+Modal.setAppElement("#projects");
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -13,6 +17,13 @@ export default function Project({
   imageUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(!modalIsOpen);
+  };
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
@@ -24,7 +35,8 @@ export default function Project({
     <motion.div
       ref={ref}
       style={{ scale: scaleProgess, opacity: opacityProgess }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group mb-3 sm:mb-8 last:mb-0 cursor-pointer"
+      onClick={openModal}
     >
       <section
         className="bg-gray-100 max-w-[42] borderBlack rounded-lg overflow-hidden sm:h-[20rem] 
@@ -66,6 +78,17 @@ export default function Project({
             group-even:right-[initial] group-even:-left-[100px]"
         />
       </section>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={openModal}
+        contentLabel="Project Modal"
+      >
+        <div className="flex flex-col items-center">
+          <h2>{title}</h2>
+          <button onClick={openModal}>close</button>
+          <div>I am a modal</div>
+        </div>
+      </Modal>
     </motion.div>
   );
 }
