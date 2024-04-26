@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import Modal from "react-modal";
+import { useTheme } from "@/context/ThemeContext";
 
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#projects");
@@ -19,6 +20,7 @@ export default function Project({
   const ref = useRef<HTMLDivElement>(null);
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const { theme } = useTheme();
 
   const openModal = () => {
     if (!modalIsOpen) {
@@ -32,15 +34,23 @@ export default function Project({
   };
 
   const customStyles = {
+    overlay: {
+      backgroundColor:
+        theme === "light" ? "rgba(0, 0, 0, 0.2)" : "rgba(255, 255, 255, 0.2)",
+      zIndex: 1000,
+    },
     content: {
       top: "50%",
       left: "50%",
       right: "auto",
       bottom: "auto",
       marginRight: "-50%",
+      backgroundColor:
+        theme === "light" ? "rgba(255 ,255,255,0.8)" : "rgba(0,5 ,15,0.8)",
       transform: "translate(-50%, -50%)",
-      width: "90%",
-      height: "80%",
+      width: "95%",
+      height: "90%",
+      backdropFilter: "blur(8px)",
     },
   };
 
