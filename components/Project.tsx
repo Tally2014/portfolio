@@ -23,10 +23,12 @@ export default function Project({
   const openModal = () => {
     if (!modalIsOpen) {
       setModalIsOpen(true);
+      document.body.classList.add("modal-open");
     }
   };
   const closeModal = () => {
     setModalIsOpen((prevState) => !prevState);
+    document.body.classList.remove("modal-open");
   };
 
   const { scrollYProgress } = useScroll({
