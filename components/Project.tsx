@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
@@ -21,7 +21,12 @@ export default function Project({
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
-    setModalIsOpen(!modalIsOpen);
+    if (!modalIsOpen) {
+      setModalIsOpen(true);
+    }
+  };
+  const closeModal = () => {
+    setModalIsOpen((prevState) => !prevState);
   };
 
   const { scrollYProgress } = useScroll({
@@ -80,12 +85,12 @@ export default function Project({
       </section>
       <Modal
         isOpen={modalIsOpen}
-        onRequestClose={openModal}
+        onRequestClose={closeModal}
         contentLabel="Project Modal"
       >
         <div className="flex flex-col items-center">
           <h2>{title}</h2>
-          <button onClick={openModal}>close</button>
+          <button onClick={closeModal}>close</button>
           <div>I am a modal</div>
         </div>
       </Modal>
