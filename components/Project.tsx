@@ -5,6 +5,7 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import Modal from "react-modal";
 import { useTheme } from "@/context/ThemeContext";
+import ProjectsGallery from "./ProjectsGallery";
 
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#projects");
@@ -117,7 +118,7 @@ export default function Project({
         <div className="flex flex-col items-center">
           <h2>{title}</h2>
           <button onClick={closeModal}>close</button>
-          <div>I am a modal</div>
+          <ProjectsGallery {...{ title, description, tags, imageUrl }}/>
         </div>
       </Modal>
     </motion.div>
