@@ -5,6 +5,16 @@ import { LuGraduationCap } from "react-icons/lu";
 import project1 from "../public/project1.png";
 import project2 from "../public/project2.png";
 import project3 from "../public/project3.png";
+import dev1 from "../public/projects/development/translateweatherapp1.png";
+import dev2 from "../public/projects/development/sawswarningapp.png";
+import dev3 from "../public/projects/development/sawswarningapp2.png";
+import dev4 from "../public/projects/development/financialappwpf.png";
+import graphic1 from "../public/projects/graphics/channel_ci.png";
+import graphic2 from "../public/projects/graphics/nguniweather.png";
+import graphic3 from "../public/projects/graphics/sports.png";
+import graphic4 from "../public/projects/graphics/ar.png";
+import graphic5 from "../public/projects/graphics/fullframe.png";
+import graphic6 from "../public/projects/graphics/sidepanels.png";
 
 export const links = [
   {
@@ -74,6 +84,32 @@ export const projectsData = [
       "Upon Learning Programming, I have expanded my role at Newzroom Afrika to include the development of desktop applications. These applications are specifically designed to enhance the efficiency and effectiveness of live graphics data management, further contributing to the dynamic broadcasting environment.",
     tags: ["C#", "WPF", "XAML", "JSON", "API", "SQL"],
     imageUrl: project3,
+    projects: [
+      {
+        image: dev1,
+        title: "Weather Translator Desktop Application",
+        discription:
+          "The application reads a JSON file from the weather service providers, translates the data into South African Zulu and Xhosa languages, and displays the updated information on the user interface made using WPF, which closely resembles the on-air weather graphics.",
+      },
+      {
+        image: dev2,
+        title: "SAWS Warnings Desktop Application",
+        discription:
+          "The application retrieves weather warning data from the South African Weather Services FTP server, then formats and writes this data to a JSON file. This file is subsequently integrated with our on-air weather map, which is designed to emphasize textures based on the warnings specific to each province.",
+      },
+      {
+        image: dev3,
+        title: "SAWS Warnings Application Upgrade",
+        discription:
+          "The SAWS Warnings Desktop Application has been reworked and upgraded to feature a user-friendly, modern interface and additional features that simplify customization.",
+      },
+      {
+        image: dev4,
+        title: "Financials Application Upgrade",
+        discription:
+          "The user interface has been reworked to adopt a modern appearance that mirrors the channel's on-air financial graphics, utilizing C# WPF XAML",
+      },
+    ],
   },
 ] as const;
 
