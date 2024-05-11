@@ -17,7 +17,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
-  projects
+  projects,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -62,6 +62,13 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const formattedProjects = projects.map(project => ({
+    ...project,
+    title: project.title || 'Default Title',
+    description: project.description || 'Default Description',
+    imageUrl: project.image || 'Default Image URL'
+  }));
 
   return (
     <motion.div
@@ -119,7 +126,9 @@ export default function Project({
         <div className="flex flex-col items-center">
           <h2>{title}</h2>
           <button onClick={closeModal}>close</button>
-          <ProjectsGallery {...{ title, description, tags, imageUrl,projects }}/>
+          <ProjectsGallery
+            projects={formattedProjects}
+          />
         </div>
       </Modal>
     </motion.div>

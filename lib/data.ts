@@ -81,38 +81,33 @@ export const projectsData = [
       {
         image: graphic1,
         title: "Channel Identity",
-        discription:
-          "ci",
+        description:
+          "I have been part of a dedicated team responsible for creating and evolving the visual design of Newzroom Afrika since the channel's inception, as well as its ongoing maintenance.",
       },
       {
         image: graphic2,
         title: "Weather Graphic",
-        discription:
-          "wg",
+        description: "wg",
       },
       {
         image: graphic3,
         title: "Sports Graphics",
-        discription:
-          "sg",
+        description: "sg",
       },
       {
         image: graphic4,
         title: "Augmented Reality Graphics",
-        discription:
-          "arg",
+        description: "arg",
       },
       {
         image: graphic5,
         title: "Full Frame Graphics",
-        discription:
-          "ffg",
+        description: "ffg",
       },
       {
         image: graphic6,
         title: "Side Panel Graphics",
-        discription:
-          "spg",
+        description: "spg",
       },
     ] as const,
   },
@@ -126,25 +121,25 @@ export const projectsData = [
       {
         image: dev1,
         title: "Weather Translator Desktop Application",
-        discription:
+        description:
           "The application reads a JSON file from the weather service providers, translates the data into South African Zulu and Xhosa languages, and displays the updated information on the user interface made using WPF, which closely resembles the on-air weather graphics.",
       },
       {
         image: dev2,
         title: "SAWS Warnings Desktop Application",
-        discription:
+        description:
           "The application retrieves weather warning data from the South African Weather Services FTP server, then formats and writes this data to a JSON file. This file is subsequently integrated with our on-air weather map, which is designed to emphasize textures based on the warnings specific to each province.",
       },
       {
         image: dev3,
         title: "SAWS Warnings Application Upgrade",
-        discription:
+        description:
           "The SAWS Warnings Desktop Application has been reworked and upgraded to feature a user-friendly, modern interface and additional features that simplify customization.",
       },
       {
         image: dev4,
         title: "Financials Application Upgrade",
-        discription:
+        description:
           "The user interface has been reworked to adopt a modern appearance that mirrors the channel's on-air financial graphics, utilizing C# WPF XAML",
       },
     ] as const,
