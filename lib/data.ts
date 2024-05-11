@@ -77,6 +77,44 @@ export const projectsData = [
       "Since the launch of Newzroom Afrika in 2019, I have been instrumental in developing and implementing live graphics. My expertise encompasses the full spectrum of graphics creation, including design, animation, and the development of dynamic templates, offering a comprehensive full-stack graphics solution.",
     tags: ["Maestro Designer", "Page editor", "News Controller"],
     imageUrl: project1,
+    projects: [
+      {
+        image: graphic1,
+        title: "Channel Identity",
+        discription:
+          "ci",
+      },
+      {
+        image: graphic2,
+        title: "Weather Graphic",
+        discription:
+          "wg",
+      },
+      {
+        image: graphic3,
+        title: "Sports Graphics",
+        discription:
+          "sg",
+      },
+      {
+        image: graphic4,
+        title: "Augmented Reality Graphics",
+        discription:
+          "arg",
+      },
+      {
+        image: graphic5,
+        title: "Full Frame Graphics",
+        discription:
+          "ffg",
+      },
+      {
+        image: graphic6,
+        title: "Side Panel Graphics",
+        discription:
+          "spg",
+      },
+    ] as const,
   },
   {
     title: "Full-Stack Development",
@@ -109,7 +147,7 @@ export const projectsData = [
         discription:
           "The user interface has been reworked to adopt a modern appearance that mirrors the channel's on-air financial graphics, utilizing C# WPF XAML",
       },
-    ],
+    ] as const,
   },
 ] as const;
 

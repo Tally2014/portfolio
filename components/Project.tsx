@@ -17,6 +17,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  projects
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -118,7 +119,7 @@ export default function Project({
         <div className="flex flex-col items-center">
           <h2>{title}</h2>
           <button onClick={closeModal}>close</button>
-          <ProjectsGallery {...{ title, description, tags, imageUrl }}/>
+          <ProjectsGallery {...{ title, description, tags, imageUrl,projects }}/>
         </div>
       </Modal>
     </motion.div>

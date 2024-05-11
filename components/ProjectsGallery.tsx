@@ -2,10 +2,16 @@ import React from 'react'
 import { projectsData } from "@/lib/data";
 import Image, { StaticImageData } from 'next/image';
 
+type Project = {
+  image: StaticImageData;
+  title: string;
+  description: string;
+};
+
 type ProjectProps = 
   {
     title: "Broadcasting Graphics" | "Full-Stack Development";
-    imageUrl: StaticImageData
+    imageUrl: StaticImageData,
   }
 ;
 export default function ProjectsGallery({
