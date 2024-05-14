@@ -87,27 +87,32 @@ export const projectsData = [
       {
         image: graphic2,
         title: "Weather Graphic",
-        description: "wg",
+        description:
+          "Created visually engaging weather graphics from design, building the scene, template and integrating real-time data from SQL databases.",
       },
       {
         image: graphic3,
         title: "Sports Graphics",
-        description: "sg",
+        description:
+          "I have designed, built, and created dynamic sports graphics that seamlessly integrate both live and historical data, providing a captivating visual experience for viewers. My expertise in crafting these graphics ensures that they are not only aesthetically pleasing but also rich in information and easy to understand.",
       },
       {
         image: graphic4,
         title: "Augmented Reality Graphics",
-        description: "arg",
+        description:
+          "I have experience in creating augmented reality graphics for Newzroom Afrika, enhancing our broadcasts with immersive 3D visuals that bring news stories to life for our audience.",
       },
       {
         image: graphic5,
         title: "Full Frame Graphics",
-        description: "ffg",
+        description:
+          "I I excel in creating full-frame graphics that are not only detailed and informative for our viewers, but also boast a modern aesthetic with stunning animations, all while ensuring seamless interaction between the elements.",
       },
       {
         image: graphic6,
         title: "Side Panel Graphics",
-        description: "spg",
+        description:
+          "I am proficient in creating a comprehensive suite of live graphics, including intricate side panel visuals that provide detailed bullet points, all while maintaining the seamless flow of the broadcast and enhancing viewer engagement.",
       },
     ] as const,
   },
