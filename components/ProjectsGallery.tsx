@@ -27,14 +27,9 @@ const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({ projects }) => {
             />
 
             <div className="bg-white p-4 sm:p-6">
-              <time className="block text-xs text-gray-500">
-                {" "}
-                10th Oct 2022{" "}
-              </time>
-
               <a href="#">
                 <h3 className="mt-0.5 text-lg text-gray-900">
-                  How to position your furniture for positivity
+                  {project.title}
                 </h3>
               </a>
 
