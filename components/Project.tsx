@@ -53,6 +53,7 @@ export default function Project({
       width: "95%",
       height: "90%",
       backdropFilter: "blur(8px)",
+      overflowY: "auto" as "auto",
     },
   };
 
@@ -63,11 +64,11 @@ export default function Project({
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  const formattedProjects = projects.map(project => ({
+  const formattedProjects = projects.map((project) => ({
     ...project,
-    title: project.title || 'Default Title',
-    description: project.description || 'Default Description',
-    imageUrl: project.image || 'Default Image URL'
+    title: project.title || "Default Title",
+    description: project.description || "Default Description",
+    imageUrl: project.image || "Default Image URL",
   }));
 
   return (
@@ -123,12 +124,16 @@ export default function Project({
         contentLabel="Project Modal"
         style={customStyles}
       >
+        <a
+          onClick={closeModal}
+          className="bg-white p-3 flex items-center gap-2 rounded-full outline-none w-40 justify-center
+        focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 fixed left-5 top-2"
+        >
+          Close
+        </a>
         <div className="flex flex-col items-center">
           <h2>{title}</h2>
-          <button onClick={closeModal}>close</button>
-          <ProjectsGallery
-            projects={formattedProjects}
-          />
+          <ProjectsGallery projects={formattedProjects} />
         </div>
       </Modal>
     </motion.div>
