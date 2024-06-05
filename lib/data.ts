@@ -75,7 +75,7 @@ export const projectsData = [
     title: "Broadcasting Graphics",
     description:
       "Since the launch of Newzroom Afrika in 2019, I have been instrumental in developing and implementing live graphics. My expertise encompasses the full spectrum of graphics creation, including design, animation, and the development of dynamic templates, offering a comprehensive full-stack graphics solution.",
-    tags: ["Maestro Designer", "Page editor", "News Controller"],
+    tags: ["Maestro Designer", "Page editor", "News Controller", "iNews"],
     imageUrl: project1,
     projects: [
       {
@@ -172,6 +172,7 @@ export const toolsData = [
   { title: "Maestro Designer", imageUrl: "/icons/applications/avid.png" },
   { title: "Maestro Page editor", imageUrl: "/icons/applications/avid.png" },
   { title: "Maestro Controller", imageUrl: "/icons/applications/avid.png" },
+  { title: "iNews", imageUrl: "/icons/applications/avid.png" },
   { title: "Viz Artist", imageUrl: "/icons/applications/viz.png" },
   { title: "Photoshop", imageUrl: "/icons/applications/ps.png" },
   { title: "Illustrator", imageUrl: "/icons/applications/ai.png" },
